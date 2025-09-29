@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Harmony - Restaurante Japonés</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>桜和</h1>
+                <div class="logo-subtitle">SAKURA HARMONY</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#chef">Chef</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#sedes">Sedes</a></li>
+                    <li><a href="#opiniones">Opiniones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="sakura-container" id="sakura-container"></div>
+        <div class="hero-content">
+            <h2>桜和</h2>
+            <p>Experiencia culinaria japonesa auténtica bajo los cerezos en flor</p>
+            <a href="#menu" class="btn">Descubre Nuestro Menú</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section-dark" id="menu">
+  <div class="container">
+    <div class="section-title reveal">
+      <h2>Nuestro Menú</h2>
+    </div>
+
+    <!-- Tabs -->
+    <div class="menu-tabs">
+      <button class="tab-btn active" data-tab="comidas">Comidas</button>
+      <button class="tab-btn" data-tab="bebestibles">Bebestibles</button>
+      <button class="tab-btn" data-tab="promociones">Promociones</button>
+    </div>
+
+    <!-- Contenido de pestañas -->
+    <div class="tab-content active" id="comidas">
+      <div class="menu-grid">
+        <!-- Aquí va el contenido actual de comidas -->
+        <div class="menu-card reveal">
+          <img src="Sushi premium.jpg" alt="Selección de sushi variado con salmón, atún y aguacate">
+          <div class="menu-card-content">
+            <h3>Selección de Sushi</h3>
+            <p>Nuestra exclusiva combinación de los mejores cortes de pescado fresco, arroz perfectamente sazonado y algas de alta calidad.</p>
+            <div class="menu-price">
+              <span class="price">$26.990</span>
+              <span>10 piezas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal">
+          <img src="sashi.webp" alt="Plato de sashimi deluxe con atún, salmón y hamachi">
+          <div class="menu-card-content">
+            <h3>Sashimi Deluxe</h3>
+            <p>Cortes premium de atún, salmón y hamachi, servidos con wasabi fresco y jengibre encurtido.</p>
+            <div class="menu-price">
+              <span class="price">$33.990</span>
+              <span>15 piezas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal">
+          <img src="tempura-mixta-frita-salsa_1339-121494.jpg" alt="Tempura mixta con camarones, vegetales y batata crujiente">
+          <div class="menu-card-content">
+            <h3>Tempura Mixta</h3>
+            <p>Camarones y vegetales de temporada rebozados en nuestra masa ligeramente crujiente, servidos con salsa tentsuyu.</p>
+            <div class="menu-price">
+              <span class="price">$19.990</span>
+              <span>8 piezas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal">
+          <img src="ramen.avif" alt="Tazón de ramen tonkotsu con chashu de cerdo, huevo y cebollines">
+          <div class="menu-card-content">
+            <h3>Ramen Especial</h3>
+            <p>Caldo tonkotsu de 12 horas de cocción, fideos artesanales, chashu de cerdo, huevo marinado y vegetales frescos.</p>
+            <div class="menu-price">
+              <span class="price">$17.990</span>
+              <span>Porción única</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="bebestibles">
+      <div class="menu-grid">
+        <div class="menu-card reveal">
+          <img src="tea.avif" alt="Té verde japonés tradicional">
+          <div class="menu-card-content">
+            <h3>Té Verde Japonés</h3>
+            <p>Infusión tradicional japonesa, perfecta para acompañar cualquier plato.</p>
+            <div class="menu-price">
+              <span class="price">$5.000</span>
+              <span>250 ml</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card reveal">
+          <img src="sake.jpg" alt="Botella y vaso de sake japonés">
+          <div class="menu-card-content">
+            <h3>Sake Premium</h3>
+            <p>Sake tradicional japonés, elaborado con arroz pulido y fermentado cuidadosamente.</p>
+            <div class="menu-price">
+              <span class="price">$13.990</span>
+              <span>150 ml</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card reveal">
+          <img src="iced-matcha-latte.jpg" alt="Matcha latte japonés con espuma">
+          <div class="menu-card-content">
+            <h3>Matcha Latte</h3>
+            <p>Bebida cremosa de té matcha con leche, dulce y energizante.</p>
+            <div class="menu-price">
+              <span class="price">$6.700</span>
+              <span>300 ml</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card reveal">
+          <img src="e17c1c4196c492e97392087d20b7cb11.webp" alt="Vaso de vino de ciruela japonés">
+          <div class="menu-card-content">
+            <h3>Umeshu (Vino de Ciruela)</h3>
+            <p>Bebida dulce y afrutada, tradicional en Japón, ideal para acompañar postres.</p>
+            <div class="menu-price">
+              <span class="price">$9.990</span>
+              <span>150 ml</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="promociones">
+      <div class="menu-grid">
+        <div class="menu-card reveal offer-card" data-endtime="2025-12-31T23:59:59">
+          <img src="Sushi premium.jpg" alt="Oferta especial de sushi">
+          <div class="menu-card-content">
+            <h3>Selección de Sushi - 20% OFF</h3>
+            <p>Disfruta nuestra selección de sushi con un descuento especial por tiempo limitado.</p>
+            <div class="menu-price">
+              <span class="price">$22.000</span>
+              <span>10 piezas</span>
+            </div>
+            <div class="countdown" aria-live="polite" aria-atomic="true"></div>
+          </div>
+        </div>
+        <div class="menu-card reveal offer-card" data-endtime="2025-11-15T23:59:59">
+          <img src="ramen.avif" alt="Oferta especial de ramen">
+          <div class="menu-card-content">
+            <h3>Ramen Especial - 15% OFF</h3>
+            <p>Caldo tonkotsu y fideos artesanales con descuento especial.</p>
+            <div class="menu-price">
+              <span class="price">$15.990</span>
+              <span>Porción única</span>
+            </div>
+            <div class="countdown" aria-live="polite" aria-atomic="true"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- History Section -->
+    <section class="history-section" id="historia">
+        <div class="container">
+            <div class="history-content reveal">
+                <h2>Nuestra Historia</h2>
+                <p>Fundado en 1995 por el maestro sushi Chef Hiroshi Tanaka, Sakura Harmony nació del sueño de compartir la auténtica experiencia culinaria japonesa con el mundo. Con más de 25 años de tradición, hemos mantenido viva la esencia de la cocina japonesa mientras incorporamos innovaciones que respetan nuestras raíces.</p>
+                <p>Nuestro nombre, "Sakura Harmony", refleja la belleza efímera de la flor de cerezo y la búsqueda del equilibrio perfecto en cada plato que servimos. Cada ingrediente es seleccionado meticulosamente para garantizar la máxima frescura y calidad, siguiendo los principios del washoku, la dieta tradicional japonesa reconocida por la UNESCO como Patrimonio Cultural Inmaterial.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section class="section-dark" id="chef">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Nuestro Chef Estrella</h2>
+            </div>
+            <div class="chef-section">
+                <div class="chef-image reveal">
+                    <img src="Chef experto.jpg" alt="Chef japonés preparando sushi con maestría y precisión">
+                </div>
+                <div class="chef-content reveal">
+                    <h2>Chef Hiroshi Tanaka</h2>
+                    <p>Con más de 35 años de experiencia, el Chef Hiroshi Tanaka es un maestro del arte del sushi. Formado en los prestigiosos restaurantes de Tokio, Hiroshi domina las técnicas tradicionales mientras incorpora un toque de creatividad moderna.</p>
+                    <p>Su filosofía culinaria se basa en tres principios fundamentales: respeto por los ingredientes, perfección en la técnica y armonía en la presentación. Bajo su dirección, nuestro equipo de chefs se dedica a crear experiencias gastronómicas memorables que trascienden lo ordinario.</p>
+                    <p>"Cada pieza de sushi cuenta una historia. Mi misión es asegurar que sea una historia de perfección, sabor y belleza." - Chef Hiroshi Tanaka</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Galería</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <img src="sashi 2.jpg" alt="Plato de sushi elegante decorado con flores y elementos japoneses">
+                    <div class="gallery-overlay">
+                        <h3>Presentación Maestra</h3>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="Elegante.jpg" alt="Ambiente tradicional japonés con tatami y mesas bajas">
+                    <div class="gallery-overlay">
+                        <h3>Ambiente Auténtico</h3>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="artesania.jpg" alt="Chef trabajando en la barra con herramientas de precisión">
+                    <div class="gallery-overlay">
+                        <h3>Artesanía en Acción</h3>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="postre.jpg" alt="Postres japoneses coloridos acompañados de té verde">
+                    <div class="gallery-overlay">
+                        <h3>Postres Tradicionales</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+  <section class="section-dark" id="sedes">
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>Nuestras Sedes</h2>
+        </div>
+        <div class="locations-grid">
+            <!-- Sakura Harmony Centro -->
+            <div class="location-card reveal">
+                <img src="lugar 1.jpg" 
+                     alt="Sakura Harmony Centro - Restaurante japonés elegante en distrito financiero con diseño moderno y elementos tradicionales" 
+                     class="location-image">
+                <h3>Sakura Harmony Centro</h3>
+                <p>📍 Calle Samurái 123, Distrito Financiero</p>
+                <p>Ciudad Sakura, Japón</p>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>🕒 Lunes a Domingo: 11:00 - 23:00</p>
+                <p>💡 Reservas recomendadas</p>
+                <a href="https://www.google.com/maps/place/Senzushi+Shinurayasu+Kaiou/@35.648081,139.8752601,13z/data=!4m10!1m2!2m1!1sJapón+sushi!3m6!1s0x60187dd2a2b3378f:0x5730732be5b28846!8m2!3d35.6414479!4d139.9265377!15sCgxKYXDDs24gc3VzaGlaDiIMamFww7NuIHN1c2hpkgEQc3VzaGlfcmVzdGF1cmFudJoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQyMDBlVlZJUm5KTk1WcFNVVEpSZWxSRlduaFZhMUYwWW10S1IxSkhZeEFCqgFaCggvbS8wNDJjawoIL20vMDcwMzAQASoQIgxqYXDDs24gc3VzaGkoDjIeEAEiGo3ltfPLirwK_p5oKnNQ7YWJJqhvrwcByQSMMhAQAiIMamFww7NuIHN1c2hp4AEA-gEECAAQPQ!16s%2Fg%2F1tpf72x4?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D" class="location-btn">Ver en mapa</a>
+            </div>
+            
+            <!-- Sakura Harmony Norte -->
+            <div class="location-card reveal">
+                <img src="lugar 2.jpg" 
+                     alt="Sakura Harmony Norte - Restaurante con terraza y jardín japonés tradicional con cerezos en flor" 
+                     class="location-image">
+                <h3>Sakura Harmony Norte</h3>
+                <p>📍 Avenida del Cerezo 456, Zona Residencial</p>
+                <p>Ciudad Sakura, Japón</p>
+                <p>📞 +1 (555) 234-5678</p>
+                <p>🕒 Martes a Domingo: 12:00 - 22:00</p>
+                <p>💡 Terraza con jardín japonés</p>
+                <a href="https://www.google.com/maps/place/Daiwa+Sushi/@35.6837835,139.8026474,13z/data=!4m10!1m2!2m1!1sJapón+sushi!3m6!1s0x60188bd93b027ad9:0x6447b8d96664e996!8m2!3d35.6447877!4d139.7860322!15sCgxKYXDDs24gc3VzaGlaDiIMamFww7NuIHN1c2hpkgEQc3VzaGlfcmVzdGF1cmFudJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VSSWVVcDJTblJCUlJBQqoBWgoIL20vMDQyY2sKCC9tLzA3MDMwEAEqECIMamFww7NuIHN1c2hpKA4yHhABIhqN5bXzy4q8Cv6eaCpzUO2FiSaob68HAckEjDIQEAIiDGphcMOzbiBzdXNoaeABAPoBBAgAECQ!16s%2Fg%2F1thgbfwd?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D" class="location-btn">Ver en mapa</a>
+            </div>
+            
+            <!-- Sakura Harmony Playa -->
+            <div class="location-card reveal">
+                <img src="lugqr 3.jpg" 
+                     alt="Sakura Harmony Playa - Restaurante japonés con vista al océano y atardecer sobre el mar" 
+                     class="location-image">
+                <h3>Sakura Harmony Playa</h3>
+                <p>📍 Paseo Marítimo 789, Frente al Océano</p>
+                <p>Ciudad Sakura, Japón</p>
+                <p>📞 +1 (555) 345-6789</p>
+                <p>🕒 Miércoles a Lunes: 11:30 - 23:30</p>
+                <p>💡 Vistas al atardecer</p>
+                <a href="https://www.google.com/maps/place/Tadokoro+Shoten/@35.5702107,139.6915117,16z/data=!4m9!1m2!2m1!1sjapón+sushi!3m5!1s0x6018616a97a8b497:0x388168dfc3fade5!8m2!3d35.5730634!4d139.7007522!16s%2Fg%2F11g4hcr8sp?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D" class="location-btn">Ver en mapa</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+    <section id="opiniones">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Opiniones de Clientes</h2>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-slider" id="testimonialSlider">
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-content">"La experiencia en Sakura Harmony es simplemente excepcional. Cada bocado es una obra de arte. El Chef Tanaka supera todas las expectativas con su maestría y atención al detalle."</p>
+                        <p class="testimonial-author">- María González</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-content">"El mejor sushi que he probado fuera de Japón. La calidad de los ingredientes y la ambientación del restaurante te transportan directamente a Tokio. ¡Altamente recomendado!"</p>
+                        <p class="testimonial-author">- Carlos Watanabe</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-content">"Celebramos nuestro aniversario aquí y fue una experiencia inolvidable. El servicio impecable y la comida exquisita hicieron de nuestra noche algo mágico. Volveremos pronto."</p>
+                        <p class="testimonial-author">- Ana y Roberto López</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevBtn">❮</button>
+                    <button class="slider-btn" id="nextBtn">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+ <footer id="contacto">
+  <div class="container footer-container">
+    <!-- Fila con logos y frase -->
+    <div class="footer-top-row">
+      <div class="footer-logo">
+        <h1>桜和</h1>
+        <div class="logo-subtitle">SAKURA HARMONY</div>
+      </div>
+
+      <p class="footer-quote">
+        "Cada pieza de sushi es un poema, y bajo los cerezos en flor cada bocado se convierte en un recuerdo eterno."
+      </p>
+
+      <div class="footer-logo">
+        <h1>桜和</h1>
+        <div class="logo-subtitle">SAKURA HARMONY</div>
+      </div>
+    </div>
+
+    <!-- Información de contacto, enlaces y redes -->
+    <div class="footer-info-row">
+      <div class="footer-contact">
+        <h3>Contacto</h3>
+        <p>📧 javier.alvarez3@virginiogomez.cl</p>
+        <p>📞 +569 81691309</p>
+      </div>
+      <div class="footer-links">
+        <h3>Enlaces</h3>
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#historia">Historia</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-address-social">
+        <h3>Dirección</h3>
+        <p>Calle Samurái 123, Distrito Financiero</p>
+        <p>Ciudad Sakura, Japón</p>
+        <h3>Redes</h3>
+        <div class="footer-social">
+          <a href="https://web.facebook.com/groups/396375857160019?locale=es_LA" aria-label="Facebook" title="Facebook">
+            <svg xmlns="https://web.facebook.com/groups/396375857160019?locale=es_LA" width="30" height="30" fill="var(--color-light-gold)" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .732.592 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.672c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.312h3.59l-.467 3.622h-3.123v9.294h6.116c.732 0 1.324-.592 1.324-1.324v-21.35c0-.733-.592-1.325-1.324-1.325z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/javier_alv.27" aria-label="Instagram" title="Instagram">
+            <svg xmlns="https://www.instagram.com/javier_alv.27" width="30" height="30" fill="var(--color-light-gold)" viewBox="0 0 24 24"><path d="M7.75 2h8.5c3.18 0 5.75 2.57 5.75 5.75v8.5c0 3.18-2.57 5.75-5.75 5.75h-8.5c-3.18 0-5.75-2.57-5.75-5.75v-8.5c0-3.18 2.57-5.75 5.75-5.75zm0-2c-4.28 0-7.75 3.47-7.75 7.75v8.5c0 4.28 3.47 7.75 7.75 7.75h8.5c4.28 0 7.75-3.47 7.75-7.75v-8.5c0-4.28-3.47-7.75-7.75-7.75h-8.5zm8.5 5.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zm-4.25 1.75a4.75 4.75 0 110 9.5 4.75 4.75 0 010-9.5zm0 2a2.75 2.75 0 100 5.5 2.75 2.75 0 000-5.5z"/></svg>
+          </a>
+          <a href="https://x.com/CentralCBC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" aria-label="Twitter" title="Twitter">
+            <svg xmlns="https://x.com/CentralCBC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" width="30" height="30" fill="var(--color-light-gold)" viewBox="0 0 24 24"><path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.865 9.865 0 01-3.127 1.195 4.916 4.916 0 00-8.373 4.482 13.94 13.94 0 01-10.125-5.14 4.916 4.916 0 001.523 6.574 4.9 4.9 0 01-2.228-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.918 4.918 0 004.59 3.417 9.867 9.867 0 01-6.102 2.104c-.396 0-.787-.023-1.17-.067a13.945 13.945 0 007.557 2.212c9.054 0 14.002-7.496 14.002-13.986 0-.21 0-.423-.015-.633a9.936 9.936 0 002.457-2.548l-.047-.02z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Derechos reservados -->
+    <p class="copyright">© 2025 Sakura Harmony. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
